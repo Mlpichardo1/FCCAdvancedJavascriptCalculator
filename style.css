@@ -6,14 +6,24 @@ h1 {
 #calc {
     font-size: 2.5rem;
     margin: 0 auto;
+    padding: 15px;
 }
 
 #show {
     text-align: right;
     font-size: 2rem;
+    margin: 15px;
     
 }
-
+body > div {
+    width:auto;
+    max-width: 404px;
+    height:auto;
+    border: 1px solid black;
+    padding: 2%;
+    box-sizing:border-box;
+    display:block
+}
 .container {
   display: flex;
   text-align: center;
@@ -25,9 +35,3 @@ h1 {
   width: 50vw;
 }
 
-#buttons {
-    display:inline-block;
-    height: 80px;
-    width: 80px;
-    font-size: 2.5rem;
-}
