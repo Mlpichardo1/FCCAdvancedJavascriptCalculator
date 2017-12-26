@@ -12,25 +12,49 @@
 <body>
     <h1>JavaScript Calculator</h1>
     <hr size=30 color="black">
-    <div>
-    <div id="calc" class="container">
-    <input type="display" placeholder="0" id="show"/>
-    <br>
     
-    <div id="buttons">
-    <input type="button" value="7" style="width:4vw" onclick=""/>
-    <input type="button" value="8" style="width:4vw" onclick=""/>
-    <input type="button" value="9" style="width:4vw" onclick=""/>
-    <input type="button" value="*" style="width:4vw" onclick=""/>
-    <br>
+    <form name="frm" id="calc">
+        
+        <input id="textbox" type="textbox" name="txt" placeholder=0><br>
+        <input type="button" value="CE" onclick="cEquation()">
+        <input type="button" value="C" onclick="clear()">
+        <input type="button" value="&#x2b" onclick="display(plus)">
+        <br>
+        
+        <input type="button" value="7" onclick="display( '7' )"/>
+        <input type="button" value="8" onclick="display( '8' )"/>
+        <input type="button" value="9" onclick="display( '9' )"/>
+        <input type="button" value="&divide" onclick="display(btnd.value)"/>
+        <br>
+        
+        <input type="button" name="btn4" value="4" onclick="display(btn4.value)"/>
+        <input type="button" name="btn5" value="5" onclick="display(btn5.value)"/>
+        <input type="button" name="btn6" value="6" onclick="display(btn6.value)"/>
+        <input type="button" name="btnt" value="&times" onclick="display(btnt.value)"/>
+        <br>
+        
+        <input type="button" name="btn1" value="1" onclick="display(btn1.value)"/>
+        <input type="button" name="btn2" value="2" onclick="display(btn2.value)"/>
+        <input type="button" name="btn3" value="3" onclick="display(btn3.value)"/>
+        <input type="button" name="btns" value="&#x2212" onclick="display(btns.value)"/>
+        <br>
+        
+        <input type="button" name="btndot" value="." onclick="display(btndot.value)"/>
+        <input type="button" name="btn0" value="0" onclick="display(btn0.value)"/>
+        <input type="button" name="btneq" value="=" onclick="answer()"/>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </form>
     
     
-    
-    
-    
-    </div>
-    </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">

@@ -3,17 +3,9 @@ h1 {
   justify-content: center; 
 }
 
-#calc {
-    font-size: 2.5rem;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-#show {
-    text-align: right;
-    font-size: 2rem;
-    margin: 15px;
-    
+#textbox {
+  text-align: right;
+  
 }
 
 .container {
