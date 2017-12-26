@@ -15,15 +15,7 @@ h1 {
     margin: 15px;
     
 }
-body > div {
-    width:auto;
-    max-width: 404px;
-    height:auto;
-    border: 1px solid black;
-    padding: 2%;
-    box-sizing:border-box;
-    display:block
-}
+
 .container {
   display: flex;
   text-align: center;
