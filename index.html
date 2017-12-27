@@ -1,67 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Russo+One|Comfortaa:700" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
-    <title>Advanced JS Calculator</title>
+	<title>Advanced JS Calculator</title>
 </head>
 <body>
-    <h1>JavaScript Calculator</h1>
-    <hr size=30 color="black">
-    
-    <form name="frm" id="calc">
-        
-        <input id="textbox" type="textbox" name="txt" placeholder=0><br>
-        <input type="button" value="CE" onclick="cEquation()">
-        <input type="button" value="C" onclick="clear()">
-        <input type="button" value="&#x2b" onclick="display(plus)">
-        <br>
-        
-        <input type="button" value="7" onclick="display( '7' )"/>
-        <input type="button" value="8" onclick="display( '8' )"/>
-        <input type="button" value="9" onclick="display( '9' )"/>
-        <input type="button" value="&divide" onclick="display(btnd.value)"/>
-        <br>
-        
-        <input type="button" name="btn4" value="4" onclick="display(btn4.value)"/>
-        <input type="button" name="btn5" value="5" onclick="display(btn5.value)"/>
-        <input type="button" name="btn6" value="6" onclick="display(btn6.value)"/>
-        <input type="button" name="btnt" value="&times" onclick="display(btnt.value)"/>
-        <br>
-        
-        <input type="button" name="btn1" value="1" onclick="display(btn1.value)"/>
-        <input type="button" name="btn2" value="2" onclick="display(btn2.value)"/>
-        <input type="button" name="btn3" value="3" onclick="display(btn3.value)"/>
-        <input type="button" name="btns" value="&#x2212" onclick="display(btns.value)"/>
-        <br>
-        
-        <input type="button" name="btndot" value="." onclick="display(btndot.value)"/>
-        <input type="button" name="btn0" value="0" onclick="display(btn0.value)"/>
-        <input type="button" name="btneq" value="=" onclick="answer()"/>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    </form>
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	<h1>JavaScript Calculator</h1>
+	<hr size="30">
+	<div id="calculator">
+		<form id="calc" name="frm">
+			<input id="textbox" name="txt" placeholder="0" type="textbox"><br>
+			<input id="clearKeys" onclick="display( 'CE' )" type="button" value="CE"> <input id="clearKeys" onclick="backSpace()" type="button" value="C"> <input id="keys" onclick="display( '+')" type="button" value="+"><br>
+			<input id="keys" onclick="display( '7' )" type="button" value="7"> <input id="keys" onclick="display( '8' )" type="button" value="8"> <input id="keys" onclick="display( '9' )" type="button" value="9"> <input id="keys" onclick="display( '/' )" type="button" value="/"><br>
+			<input id="keys" onclick="display( '4' )" type="button" value="4"> <input id="keys" onclick="display( '5' )" type="button" value="5"> <input id="keys" onclick="display( '6' )" type="button" value="6"> <input id="keys" onclick="display( '*' )" type="button" value="*"><br>
+			<input id="keys" onclick="display( '1' )" type="button" value="1"> <input id="keys" onclick="display( '2' )" type="button" value="2"> <input id="keys" onclick="display( '3' )" type="button" value="3"> <input id="keys" onclick="display( '-' )" type="button" value="-"><br>
+			<input id="keys" onclick="display( '.' )" type="button" value="."> <input id="keys" onclick="display( '0' )" type="button" value="0"> <input id="equal" onclick="display( '=' )" type="button" value="=">
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
 	</script> 
 	<script src="script.js">
-	</script> 
+	</script>
 </body>
 </html>
